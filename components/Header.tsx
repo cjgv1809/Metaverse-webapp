@@ -1,22 +1,10 @@
 import Image from "next/image";
-import { useEffect, useState } from "react";
 import { useMoralis } from "react-moralis";
 import Avatar from "./Avatar";
 import ChangeUsername from "./ChangeUsername";
 
 function Header(): JSX.Element {
   const { user } = useMoralis();
-  const [show, handleShow] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 268) {
-        handleShow(true);
-      } else {
-        handleShow(false);
-      }
-    });
-  }, []);
 
   return (
     <header className="sticky top-0 pt-4 pb-2 z-50 shadow-xl text-pink-300 bg-gradient-to-b from-violet-500 to-black border-b border-purple-500">

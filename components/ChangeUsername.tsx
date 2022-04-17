@@ -19,7 +19,7 @@ function ChangeUsername(): JSX.Element {
       input: "text",
       inputLabel: `Enter your new username (current: ${user.getUsername()})`,
       inputValidator: (validUsername) => {
-        // Si el valor es válido, debes regresar undefined. Si no, una cadena
+        // If value is valid, return undefined. Otherwise, a string with the error message
         if (!validUsername) {
           return "Please enter a valid username";
         } else {
