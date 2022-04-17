@@ -7,7 +7,7 @@ function Header(): JSX.Element {
   const { user } = useMoralis();
 
   return (
-    <header className="sticky top-0 pt-4 pb-2 z-50 shadow-xl text-pink-300 bg-gradient-to-b from-violet-500 to-black border-b border-purple-500">
+    <header className="sticky top-0 pt-4 pb-2 z-50 shadow-xl text-pink-300 bg-gradient-to-b from-pink-400 to-black border-b border-purple-500">
       <div className="grid grid-cols-5 lg:grid-cols-6 items-end lg:items-center">
         <div className="relative h-28 w-28 mx-auto hidden lg:inline-grid place-self-start border-2 border-pink-300 rounded-full">
           <Image
