@@ -42,11 +42,11 @@ function Login(): JSX.Element {
             />
           </svg>
           {isAuthenticating && isLoading
-            ? "Logging ..."
+            ? "Logging..."
             : "Login to the Metaverse"}
         </button>
       </div>
-      <div className="h-screen w-full">
+      <div className="h-screen w-full relative">
         <Image
           src="https://links.papareact.com/55n"
           layout="fill"
